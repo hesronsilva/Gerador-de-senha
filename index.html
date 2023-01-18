@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="style.css">
+
+<html lang="br">
+<head>
+    <title>Gerador de Senha</title>
+</head>
+<body>
+    <img class="logo" src="./img/logo.jpg" alt="Logo Gerador de Senha">
+    <main class="container-entrada">
+        <span>Tamanho <span id="valor"></span> caracteres</span>
+        <input type="range" id="slider" class="slider" min="4" max="8" value="6"/>
+        <button id="botao" class="botao" onclick="gerarSenha()">Gerar Senha</button>
+    </main>
+    <div id="container-senha" onclick="copiarSenha()" class="container-senha hide">
+        <span class="titulo">Sua senha criado foi: </span>
+        <span id="senha" class="senha"></span>
+        <span class="copiarsenha">Clique na senha para copiar</span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
